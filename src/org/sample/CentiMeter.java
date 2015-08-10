@@ -3,20 +3,40 @@ package org.sample;
 /**
  * Created by Randeep on 8/10/2015.
  */
-public class CentiMeter {
-    private Double value;
-    private static final Integer toMeterFactor=100;
+public class CentiMeter extends Length{
 
-    public Double getValue() {
-        return value;
-    }
 
-    public void setValue(Double value) {
+    public CentiMeter(){}
+    public CentiMeter(Double value) {
         this.value = value;
     }
-    public Meter toMeter(){
-        Meter meter =new Meter();
-        meter.setValue(this.value/toMeterFactor);
-        return meter;
+
+
+
+    @Override
+    public CentiMeter toCenti() {
+        return this;
+    }
+
+    @Override
+    public Length convertFrom(Length centiMeter) {
+        return this;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CentiMeter)) return false;
+
+        CentiMeter that = (CentiMeter) o;
+
+        return !(getValue() != null ? !getValue().equals(that.getValue()) : that.getValue() != null);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return getValue() != null ? getValue().hashCode() : 0;
     }
 }

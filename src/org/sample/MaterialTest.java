@@ -1,6 +1,7 @@
 package org.sample;
 
 import junit.framework.Assert;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -10,31 +11,48 @@ import static org.junit.Assert.*;
 
 public class MaterialTest {
 
-    @org.junit.Test
+    @Test
     public void shouldTestMaterialLengthEquality(){
 
 
-        CentiMeter centiMeter=new CentiMeter();
-        Meter meter= new Meter();
-        meter.setValue(2.0);
-        centiMeter.setValue(200.0);
+        Material material1= new Material(new Meter(2.0));
+        Material material2= new Material(new CentiMeter(200.0));
 
-        Assert.assertTrue(Material.isEqual(centiMeter,meter));
+        Assert.assertTrue(Length.isEqual(material1.getLength(),material2.getLength()));
 
     }
-    @org.junit.Test
+    @Test
     public void shouldTestMaterialLengthNotEqual(){
 
 
-        CentiMeter centiMeter=new CentiMeter();
-        Meter meter= new Meter();
+        Material material1= new Material(new Meter(2.0));
+        Material material2= new Material(new CentiMeter(300.0));
 
-        meter.setValue(3.0);
-        centiMeter.setValue(200.0);
+        Assert.assertFalse(Length.isEqual(material1.getLength(), material2.getLength()));
 
-        Assert.assertTrue(Material.isEqual(meter,centiMeter));
 
     }
+    @Test
+    public void shouldTestMaterialLengthConversion(){
 
 
+        Material material1= new Material(new Meter(2.0));
+
+        Meter meter = new Meter(2.0);
+
+       Assert.assertEquals(6.56168, Length.convert(material1.getLength(), new Feet()).getValue(), .001);
+
+
+    }
+//    @org.junit.Test
+//    public void shouldTestMaterialLengthConversionFail(){
+//
+//
+//        Material material1= new Material(new Meter(2.0));
+//
+//        Meter meter = new Meter(2.0);
+//
+//        Assert.assertEquals(6.66168, Length.convert(material1.getLength(), new Feet()).getValue(),.001);
+//
+//    }
 }
