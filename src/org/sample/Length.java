@@ -20,5 +20,10 @@ public abstract class Length {
        return target.convertFrom(src.toCenti());
         }
 
+    public static Length add(Length src,Length target) {
+        return src.addFrom(target.toCenti());
+    }
+
+    protected abstract Length addFrom(Length centiMeter);
 }
 

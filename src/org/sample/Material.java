@@ -4,7 +4,7 @@ package org.sample;
  * Created by Randeep on 8/10/2015.
  */
 public class Material {
-    Length length;
+    private Length length;
     public Material(){}
     public Material(Length length) {
         this.length = length;

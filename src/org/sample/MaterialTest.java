@@ -38,21 +38,23 @@ public class MaterialTest {
 
         Material material1= new Material(new Meter(2.0));
 
-        Meter meter = new Meter(2.0);
 
        Assert.assertEquals(6.56168, Length.convert(material1.getLength(), new Feet()).getValue(), .001);
 
+    }
+    @Test
+    public void shouldTestMaterialLengthAddition(){
+
+
+        Material material1= new Material(new Feet(10.0));
+        Material material2= new Material(new Meter(3.0));
+        Material material3 = new Material(Length.add(material1.getLength(),material2.getLength()));
+
+        Assert.assertEquals(19.8425197, material3.getLength().getValue(), .001);
 
     }
-//    @org.junit.Test
-//    public void shouldTestMaterialLengthConversionFail(){
-//
-//
-//        Material material1= new Material(new Meter(2.0));
-//
-//        Meter meter = new Meter(2.0);
-//
-//        Assert.assertEquals(6.66168, Length.convert(material1.getLength(), new Feet()).getValue(),.001);
-//
-//    }
+
+
+
+
 }

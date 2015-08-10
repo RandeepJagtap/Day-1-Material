@@ -25,4 +25,7 @@ public class Meter extends Length{
     public Length convertFrom(Length centiMeter) {
         return new Meter(centiMeter.getValue()/toCentiMeterFactor);
     }
+    protected Length addFrom(Length centiMeter){
+        return new Meter(this.getValue()+convertFrom(centiMeter).getValue());
+    }
 }

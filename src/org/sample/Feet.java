@@ -22,4 +22,7 @@ public class Feet extends Length {
     public Length convertFrom(Length centiMeter) {
         return new Feet(centiMeter.getValue()/toCentiMeterFactor);
     }
+    protected Length addFrom(Length centiMeter){
+        return new Feet(this.getValue()+convertFrom(centiMeter).getValue());
+    }
 }

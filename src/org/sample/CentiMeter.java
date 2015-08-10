@@ -39,4 +39,7 @@ public class CentiMeter extends Length{
     public int hashCode() {
         return getValue() != null ? getValue().hashCode() : 0;
     }
+    protected Length addFrom(Length centiMeter){
+        return new CentiMeter(this.getValue()+convertFrom(centiMeter).getValue());
+    }
 }

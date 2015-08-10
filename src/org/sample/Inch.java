@@ -20,4 +20,7 @@ public class Inch extends Length{
     public Length convertFrom(Length centiMeter) {
         return new Inch(centiMeter.getValue()/toCentiMeterFactor);
     }
+    protected Length addFrom(Length centiMeter){
+        return new Inch(this.getValue()+convertFrom(centiMeter).getValue());
+    }
 }
