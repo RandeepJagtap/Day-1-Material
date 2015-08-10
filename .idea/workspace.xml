@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0bbe5d6f-f89d-40e4-b4a0-95da2677cad9" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Randeep\IdeaProjects\Day-1 Thotworks\Day-1 Thoughtworks.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Day-1 Thotworks/org/sample/CentiMeter.class" afterPath="$PROJECT_DIR$/out/production/Day-1 Thotworks/org/sample/CentiMeter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Day-1 Thotworks/org/sample/Material.class" afterPath="$PROJECT_DIR$/out/production/Day-1 Thotworks/org/sample/Material.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Day-1 Thotworks/org/sample/MaterialTest.class" afterPath="$PROJECT_DIR$/out/production/Day-1 Thotworks/org/sample/MaterialTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Day-1 Thotworks/org/sample/Meter.class" afterPath="$PROJECT_DIR$/out/production/Day-1 Thotworks/org/sample/Meter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sample/CentiMeter.java" afterPath="$PROJECT_DIR$/src/org/sample/CentiMeter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sample/Length.java" afterPath="$PROJECT_DIR$/src/org/sample/Length.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sample/Material.java" afterPath="$PROJECT_DIR$/src/org/sample/Material.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sample/MaterialTest.java" afterPath="$PROJECT_DIR$/src/org/sample/MaterialTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sample/Meter.java" afterPath="$PROJECT_DIR$/src/org/sample/Meter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day-1 Thotworks.iml" afterPath="$PROJECT_DIR$/Day-1 Thotworks.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Day-1 Thotworks.iws" />
@@ -59,8 +49,8 @@
       <file leaf-file-name="MaterialTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/sample/MaterialTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6279683">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6720867">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -233,38 +223,6 @@
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JUnit4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junit-4.11.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Day-1 Thotworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JUnit4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Day-1 Thotworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -306,7 +264,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="G:/Software/junit-4.12.jar!/" />
+    <property name="last_opened_file_path" value="G:/junit-4.12.jar!/" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -560,6 +519,7 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/junit-4.7.jar" />
       <envs />
       <method />
     </configuration>
@@ -690,7 +650,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3451613" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12613294" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -828,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/sample/MaterialTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6279683">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6720867">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
