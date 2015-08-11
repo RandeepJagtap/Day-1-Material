@@ -3,24 +3,25 @@ package org.sample;
 /**
  * Created by Randeep on 8/10/2015.
  */
-public class Inch extends Length{
-    private static final Double toCentiMeterFactor=2.54;
+public class Inch extends Length {
+    private static final Double toBaseFactor =2.54;
     public Inch(){}
     public Inch(Double value) {
         this.value = value;
     }
     @Override
-    public CentiMeter toCenti() {
+    public Double getToBaseFactor(){
+        return toBaseFactor;
+    }
+    @Override
+    public Length toBase(){
+        return new CentiMeter(getValue()*getToBaseFactor());
+    }
+    @Override
+    protected Length clone(Double value)  {
 
-        CentiMeter centiMeter =new CentiMeter(this.value*toCentiMeterFactor);
-
-        return centiMeter;
+        return new Inch(value);
     }
 
-    public Length convertFrom(Length centiMeter) {
-        return new Inch(centiMeter.getValue()/toCentiMeterFactor);
-    }
-    protected Length addFrom(Length centiMeter){
-        return new Inch(this.getValue()+convertFrom(centiMeter).getValue());
-    }
+
 }
