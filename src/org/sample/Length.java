@@ -6,6 +6,7 @@ package org.sample;
 public abstract class Length {
     protected double value;
     public abstract CentiMeter toCenti();
+
     public abstract Length convertFrom(Length centiMeter);
     public Double getValue() {
         return value;
