@@ -7,8 +7,8 @@ import java.awt.datatransfer.DataFlavor;
  */
 public abstract class Unit {
 
-
     protected double value;
+    String unitType;
     public Double getValue() {
         return value;
     }
